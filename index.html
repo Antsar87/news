@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
 
@@ -17,6 +19,11 @@
       type="text/css"
       href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+  />
+    <script src="js/search.js" defer></script>
     <title>Document</title>
   </head>
   <body>
@@ -48,7 +55,7 @@
           <ul class="list-none flex-1 justify-content-center d-flex g-1">
             <li class="borderR-black pR-1">
               <a
-                href="#"
+                href="contact.html"
                 class="d-flex align-items-center g-1 c-green decoration-none fs-2"
               >
                 <img src="images/Groupe 32.png" alt="" />
@@ -66,7 +73,7 @@
             </li>
             <li>
               <a
-                href="#"
+                href="category.html"
                 class="d-flex align-items-center g-1 c-green decoration-none fs-2"
               >
                 <img src="images/Groupe 33.png" alt="" />
@@ -74,6 +81,25 @@
               </a>
             </li>
           </ul>
+
+          <div class="search borderL-black pL-1 pY-1">
+            <div>
+              <img
+                src="images/magnifying-glass-solid.svg"
+                alt=""
+                style="height: 3rem; width: 3rem; cursor: pointer"
+                id="searching"
+              />
+            </div>
+
+            <div id="search" class="searchdiv" style="overflow: hidden">
+              <input
+                type="text"
+                class="w-100 mT-1 pY-1 pX-1 c-green"
+                placeholder="Search"
+              />
+            </div>
+          </div>
         </div>
       </div>
 
@@ -81,43 +107,57 @@
         <div class="container">
           <ul class="list-none d-flex g-2 justify-content-center">
             <li>
-              <a href="#" class="c-green decoration-none fs-1-7">Actu GNN</a>
+              <a href="#actu" class="c-green decoration-none fs-1-7"
+                >Actu GNN</a
+              >
             </li>
 
             <li>
-              <a href="#" class="c-green decoration-none fs-1-7">Politique</a>
+              <a href="#politique" class="c-green decoration-none fs-1-7"
+                >Politique</a
+              >
             </li>
 
             <li>
-              <a href="#" class="c-green decoration-none fs-1-7">Social Actu</a>
+              <a href="#social" class="c-green decoration-none fs-1-7"
+                >Social Actu</a
+              >
             </li>
 
             <li>
-              <a href="#" class="c-green decoration-none fs-1-7">Sport GNN</a>
+              <a href="#sport" class="c-green decoration-none fs-1-7"
+                >Sport GNN</a
+              >
             </li>
 
             <li>
-              <a href="#" class="c-green decoration-none fs-1-7"
+              <a href="#faits" class="c-green decoration-none fs-1-7"
                 >Faits divers</a
               >
             </li>
 
             <li>
-              <a href="#" class="c-green decoration-none fs-1-7"
+              <a href="#info" class="c-green decoration-none fs-1-7"
                 >Info Culture</a
               >
             </li>
 
             <li>
-              <a href="#" class="c-green decoration-none fs-1-7">Personnage</a>
+              <a href="#personnage" class="c-green decoration-none fs-1-7"
+                >Personnage</a
+              >
             </li>
 
             <li>
-              <a href="#" class="c-green decoration-none fs-1-7">Lifestyle</a>
+              <a href="#lifestyle" class="c-green decoration-none fs-1-7"
+                >Lifestyle</a
+              >
             </li>
 
             <li>
-              <a href="#" class="c-green decoration-none fs-1-7">Tendance</a>
+              <a href="#tendance" class="c-green decoration-none fs-1-7"
+                >Tendance</a
+              >
             </li>
           </ul>
         </div>
@@ -126,7 +166,7 @@
 
     <div class="wrapper">
       <div class="carousel">
-        <div>
+        <a href="article.html">
           <div class="image-box">
             <img src="images/gettyimages-1.png" alt="" class="w-100" />
 
@@ -140,8 +180,8 @@
 
             <p class="c-green fs-1 pT-1">20 avrill 2020 a 19h34min</p>
           </div>
-        </div>
-        <div>
+        </a>
+        <a href="article.html">
           <div class="image-box">
             <img
               src="images/gettyimages-1218066385-2048x2048.png"
@@ -159,8 +199,8 @@
 
             <p class="c-green fs-1 pT-1">20 avrill 2020 a 19h34min</p>
           </div>
-        </div>
-        <div>
+        </a>
+        <a href="article.html">
           <div class="image-box">
             <img
               src="images/gettyimages-1203893877-2048x2048.png"
@@ -178,23 +218,21 @@
 
             <p class="c-green fs-1 pT-1">20 avrill 2020 a 19h34min</p>
           </div>
-        </div>
-        <div class="bg-black">
+        </a>
+        <a class="bg-black" href="article.html">
           <div class="image-box">
             <img src="images/2020-06-09 16.06.14.png" alt="" class="w-100" />
           </div>
 
           <div class="bg-black pX-1 pY-2">
-
-
             <h3 class="c-black fw-700 fs-1-7">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
             </h3>
 
             <p class="c-green fs-1 pT-1">20 avrill 2020 a 19h34min</p>
           </div>
-        </div>
-       <div>
+        </a>
+        <a href="article.html">
           <div class="image-box">
             <img src="images/gettyimages-1.png" alt="" class="w-100" />
 
@@ -208,8 +246,8 @@
 
             <p class="c-green fs-1 pT-1">20 avrill 2020 a 19h34min</p>
           </div>
-        </div>
-        <div>
+        </a>
+        <a href="article.html">
           <div class="image-box">
             <img
               src="images/gettyimages-1218066385-2048x2048.png"
@@ -227,8 +265,8 @@
 
             <p class="c-green fs-1 pT-1">20 avrill 2020 a 19h34min</p>
           </div>
-        </div>
-        <div>
+        </a>
+        <a href="article.html">
           <div class="image-box">
             <img
               src="images/gettyimages-1203893877-2048x2048.png"
@@ -246,22 +284,20 @@
 
             <p class="c-green fs-1 pT-1">20 avrill 2020 a 19h34min</p>
           </div>
-        </div>
-        <div class="bg-black">
+        </a>
+        <a href="article.html" class="bg-black">
           <div class="image-box">
             <img src="images/2020-06-09 16.06.14.png" alt="" class="w-100" />
           </div>
 
           <div class="bg-black pX-1 pY-2">
-            
-
             <h3 class="c-black fw-700 fs-1-7">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
             </h3>
 
             <p class="c-green fs-1 pT-1">20 avrill 2020 a 19h34min</p>
           </div>
-        </div>
+        </a>
       </div>
     </div>
 
@@ -271,7 +307,7 @@
           <img src="images/Sobraga.png" alt="" class="w-100" />
         </div>
 
-        <section class="content__actu border-gray bg-white pX-2 pY-1">
+        <section id="actu" class="content__actu border-gray bg-white pX-2 pY-1">
           <div class="d-flex justify-content-sb align-items-center">
             <button class="btn btn--radius fw-700 fs-2 bg-green">
               Actu GNN
@@ -282,7 +318,7 @@
           </div>
 
           <div class="box g-1 pT-1">
-            <div>
+            <a href="article.html">
               <div>
                 <img src="images/gettyimages-1.png" alt="" class="w-100" />
               </div>
@@ -292,9 +328,9 @@
               </h3>
 
               <p class="c-green fs-1 pT-1">20 avrill 2020 a 19h34min</p>
-            </div>
+            </a>
 
-            <div>
+            <a href="article.html">
               <div>
                 <img src="images/gettyimages-9.png" alt="" class="w-100" />
               </div>
@@ -305,9 +341,9 @@
               </h3>
 
               <p class="c-green fs-1 pT-1">20 avrill 2020 a 19h34min</p>
-            </div>
+            </a>
 
-            <div>
+            <a href="article.html">
               <div>
                 <img src="images/gettyimages-14.png" alt="" class="w-100" />
               </div>
@@ -318,9 +354,9 @@
               </h3>
 
               <p class="c-green fs-1 pT-1">20 avrill 2020 a 19h34min</p>
-            </div>
+            </a>
 
-            <div>
+            <a href="article.html">
               <div>
                 <img src="images/gettyimages-19.png" alt="" class="w-100" />
               </div>
@@ -331,9 +367,9 @@
               </h3>
 
               <p class="c-green fs-1 pT-1">20 avrill 2020 a 19h34min</p>
-            </div>
+            </a>
 
-            <div>
+            <a href="article.html">
               <div>
                 <img
                   src="images/a1658745abf0e70d11a7eacffb5bce81.png"
@@ -347,9 +383,9 @@
               </h3>
 
               <p class="c-green fs-1 pT-1">20 avrill 2020 a 19h34min</p>
-            </div>
+            </a>
 
-            <div>
+            <a href="article.html">
               <div>
                 <img
                   src="images/famille-africaine-heureuse-33292516.png"
@@ -364,9 +400,9 @@
               </h3>
 
               <p class="c-green fs-1 pT-1">20 avrill 2020 a 19h34min</p>
-            </div>
+            </a>
 
-            <div>
+            <a href="article.html">
               <div>
                 <img
                   src="images/famille-africaine-heureuse-au-studio-moments-merveilleux-ensemble-d-afro-américain-avec-peu-enfant-sur-le-fond-jaune-de-loisirs-143904227.png"
@@ -381,9 +417,9 @@
               </h3>
 
               <p class="c-green fs-1 pT-1">20 avrill 2020 a 19h34min</p>
-            </div>
+            </a>
 
-            <div>
+            <a href="article.html">
               <div>
                 <img src="images/mère fille 2.png" alt="" class="w-100" />
               </div>
@@ -394,11 +430,14 @@
               </h3>
 
               <p class="c-green fs-1 pT-1">20 avrill 2020 a 19h34min</p>
-            </div>
+            </a>
           </div>
         </section>
 
-        <section class="content__actu border-gray bg-white pX-2 pY-1 mT-2">
+        <section
+          id="politique"
+          class="content__actu border-gray bg-white pX-2 pY-1 mT-2"
+        >
           <div class="d-flex justify-content-sb align-items-center">
             <button class="btn btn--radius fw-700 fs-2 bg-green">
               Politique
@@ -409,7 +448,7 @@
           </div>
 
           <div class="box g-1 pT-1">
-            <div>
+            <a href="article.html">
               <div>
                 <img
                   src="images/7c7b0f_c50495ab27814c00822106df76b94546~mv2.png"
@@ -427,9 +466,9 @@
               </h4>
 
               <p class="c-green fs-1 pT-1">20 avrill 2020 a 19h34min</p>
-            </div>
+            </a>
 
-            <div>
+            <a href="article.html">
               <div>
                 <img
                   src="images/9941f082659647.5d249ab17ba32.png"
@@ -447,9 +486,9 @@
               </h4>
 
               <p class="c-green fs-1 pT-1">20 avrill 2020 a 19h34min</p>
-            </div>
+            </a>
 
-            <div>
+            <a href="article.html">
               <div>
                 <img src="images/homme.png" alt="" class="w-100" />
               </div>
@@ -463,9 +502,9 @@
               </h4>
 
               <p class="c-green fs-1 pT-1">20 avrill 2020 a 19h34min</p>
-            </div>
+            </a>
 
-            <div>
+            <a href="article.html">
               <div>
                 <img
                   src="images/le-jeune-homme-beau-crie-de-la-joie-40725412.png"
@@ -483,11 +522,11 @@
               </h4>
 
               <p class="c-green fs-1 pT-1">20 avrill 2020 a 19h34min</p>
-            </div>
+            </a>
           </div>
         </section>
 
-        <section class="content__actu bg-black pX-2 pY-1 mT-2">
+        <section id="social" class="content__actu bg-black pX-2 pY-1 mT-2">
           <div class="d-flex justify-content-sb align-items-center">
             <button class="btn btn--radius fw-700 fs-2 bg-white c-green">
               Social Actu
@@ -498,72 +537,72 @@
           </div>
 
           <div class="box g-1 pT-1">
-            <div>
+            <a href="article.html" class="c-white">
               <div>
                 <img src="images/gettyimages-1.png" alt="" class="w-100" />
               </div>
 
-              <h3 class="c-black fw-700 fs-1-7">
+              <h3 class="fw-700 fs-1-7">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
               </h3>
 
-              <h4 class="c-black fw-300 fs-1-7 pT-1">
+              <h4 class="fw-300 fs-1-7 pT-1">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
               </h4>
 
               <p class="fs-1 pT-1">20 avrill 2020 a 19h34min</p>
-            </div>
+            </a>
 
-            <div>
+            <a href="article.html" class="c-white">
               <div>
                 <img src="images/gettyimages-9.png" alt="" class="w-100" />
               </div>
 
-              <h3 class="c-black fw-700 fs-1-7">
+              <h3 class="fw-700 fs-1-7">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
                 consequatur laboriosam ex voluptate enim.
               </h3>
 
-              <h4 class="c-black fw-300 fs-1-7 pT-1">
+              <h4 class="fw-300 fs-1-7 pT-1">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
               </h4>
 
               <p class="fs-1 pT-1">20 avrill 2020 a 19h34min</p>
-            </div>
+            </a>
 
-            <div>
+            <a href="article.html" class="c-white">
               <div>
                 <img src="images/gettyimages-14.png" alt="" class="w-100" />
               </div>
 
-              <h3 class="c-black fw-700 fs-1-7">
+              <h3 class="fw-700 fs-1-7">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
                 consequatur laboriosam ex voluptate enim.
               </h3>
 
-              <h4 class="c-black fw-300 fs-1-7 pT-1">
+              <h4 class="fw-300 fs-1-7 pT-1">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
               </h4>
 
               <p class="fs-1 pT-1">20 avrill 2020 a 19h34min</p>
-            </div>
+            </a>
 
-            <div>
+            <a href="article.html" class="c-white">
               <div>
                 <img src="images/gettyimages-19.png" alt="" class="w-100" />
               </div>
 
-              <h3 class="c-black fw-700 fs-1-7">
+              <h3 class="fw-700 fs-1-7">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
                 consequatur laboriosam ex voluptate enim.
               </h3>
 
-              <h4 class="c-black fw-300 fs-1-7 pT-1">
+              <h4 class="fw-300 fs-1-7 pT-1">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
               </h4>
 
               <p class="fs-1 pT-1">20 avrill 2020 a 19h34min</p>
-            </div>
+            </a>
           </div>
         </section>
 
@@ -571,7 +610,10 @@
           <img src="images/Foberd_Wescoool.png" alt="" class="w-100" />
         </div>
 
-        <section class="content__actu border-gray bg-white pX-2 pY-1 mT-2">
+        <section
+          id="sport"
+          class="content__actu border-gray bg-white pX-2 pY-1 mT-2"
+        >
           <div class="d-flex justify-content-sb align-items-center">
             <button class="btn btn--radius fw-700 fs-2 bg-green">
               Sport GNN
@@ -582,7 +624,7 @@
           </div>
 
           <div class="box g-1 pT-1">
-            <div>
+            <a href="article.html">
               <div>
                 <img src="images/gettyimages-1.png" alt="" class="w-100" />
               </div>
@@ -596,9 +638,9 @@
               </h4>
 
               <p class="fs-1 pT-1 c-green">20 avrill 2020 a 19h34min</p>
-            </div>
+            </a>
 
-            <div>
+            <a href="article.html">
               <div>
                 <img src="images/gettyimages-9.png" alt="" class="w-100" />
               </div>
@@ -613,9 +655,9 @@
               </h4>
 
               <p class="fs-1 pT-1 c-green">20 avrill 2020 a 19h34min</p>
-            </div>
+            </a>
 
-            <div>
+            <a href="article.html">
               <div>
                 <img src="images/gettyimages-14.png" alt="" class="w-100" />
               </div>
@@ -630,9 +672,9 @@
               </h4>
 
               <p class="fs-1 pT-1 c-green">20 avrill 2020 a 19h34min</p>
-            </div>
+            </a>
 
-            <div>
+            <a href="article.html">
               <div>
                 <img src="images/gettyimages-19.png" alt="" class="w-100" />
               </div>
@@ -647,11 +689,14 @@
               </h4>
 
               <p class="fs-1 pT-1 c-green">20 avrill 2020 a 19h34min</p>
-            </div>
+            </a>
           </div>
         </section>
 
-        <section class="content__actu border-gray bg-white pX-2 pY-1 mT-2">
+        <section
+          id="faits"
+          class="content__actu border-gray bg-white pX-2 pY-1 mT-2"
+        >
           <div class="d-flex justify-content-sb align-items-center">
             <button class="btn btn--radius fw-700 fs-2 bg-green">
               Faits divers
@@ -662,7 +707,7 @@
           </div>
 
           <div class="box g-1 pT-1">
-            <div>
+            <a href="article.html">
               <div>
                 <img src="images/gettyimages-1.png" alt="" class="w-100" />
               </div>
@@ -676,9 +721,9 @@
               </h4>
 
               <p class="fs-1 pT-1 c-green">20 avrill 2020 a 19h34min</p>
-            </div>
+            </a>
 
-            <div>
+            <a href="article.html">
               <div>
                 <img src="images/gettyimages-9.png" alt="" class="w-100" />
               </div>
@@ -693,9 +738,9 @@
               </h4>
 
               <p class="fs-1 pT-1 c-green">20 avrill 2020 a 19h34min</p>
-            </div>
+            </a>
 
-            <div>
+            <a href="article.html">
               <div>
                 <img src="images/gettyimages-14.png" alt="" class="w-100" />
               </div>
@@ -710,9 +755,9 @@
               </h4>
 
               <p class="fs-1 pT-1 c-green">20 avrill 2020 a 19h34min</p>
-            </div>
+            </a>
 
-            <div>
+            <a href="article.html">
               <div>
                 <img src="images/gettyimages-19.png" alt="" class="w-100" />
               </div>
@@ -727,11 +772,11 @@
               </h4>
 
               <p class="fs-1 pT-1 c-green">20 avrill 2020 a 19h34min</p>
-            </div>
+            </a>
           </div>
         </section>
 
-        <section class="content__actu bg-black pX-2 pY-1 mT-2">
+        <section id="info" class="content__actu bg-black pX-2 pY-1 mT-2">
           <div class="d-flex justify-content-sb align-items-center">
             <button class="btn btn--radius fw-700 fs-2 bg-white c-green">
               Info Culture
@@ -742,72 +787,72 @@
           </div>
 
           <div class="box g-1 pT-1">
-            <div>
+            <a href="article.html" class="c-white">
               <div>
                 <img src="images/gettyimages-1.png" alt="" class="w-100" />
               </div>
 
-              <h3 class="c-black fw-700 fs-1-7">
+              <h3 class="fw-700 fs-1-7">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
               </h3>
 
-              <h4 class="c-black fw-300 fs-1-7 pT-1">
+              <h4 class="fw-300 fs-1-7 pT-1">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
               </h4>
 
               <p class="fs-1 pT-1">20 avrill 2020 a 19h34min</p>
-            </div>
+            </a>
 
-            <div>
+            <a href="article.html" class="c-white">
               <div>
                 <img src="images/gettyimages-9.png" alt="" class="w-100" />
               </div>
 
-              <h3 class="c-black fw-700 fs-1-7">
+              <h3 class="fw-700 fs-1-7">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
                 consequatur laboriosam ex voluptate enim.
               </h3>
 
-              <h4 class="c-black fw-300 fs-1-7 pT-1">
+              <h4 class="fw-300 fs-1-7 pT-1">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
               </h4>
 
               <p class="fs-1 pT-1">20 avrill 2020 a 19h34min</p>
-            </div>
+            </a>
 
-            <div>
+            <a href="article.html" class="c-white">
               <div>
                 <img src="images/gettyimages-14.png" alt="" class="w-100" />
               </div>
 
-              <h3 class="c-black fw-700 fs-1-7">
+              <h3 class="fw-700 fs-1-7">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
                 consequatur laboriosam ex voluptate enim.
               </h3>
 
-              <h4 class="c-black fw-300 fs-1-7 pT-1">
+              <h4 class="fw-300 fs-1-7 pT-1">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
               </h4>
 
               <p class="fs-1 pT-1">20 avrill 2020 a 19h34min</p>
-            </div>
+            </a>
 
-            <div>
+            <a href="article.html" class="c-white">
               <div>
                 <img src="images/gettyimages-19.png" alt="" class="w-100" />
               </div>
 
-              <h3 class="c-black fw-700 fs-1-7">
+              <h3 class="fw-700 fs-1-7">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
                 consequatur laboriosam ex voluptate enim.
               </h3>
 
-              <h4 class="c-black fw-300 fs-1-7 pT-1">
+              <h4 class="fw-300 fs-1-7 pT-1">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
               </h4>
 
               <p class="fs-1 pT-1">20 avrill 2020 a 19h34min</p>
-            </div>
+            </a>
           </div>
         </section>
 
@@ -819,10 +864,10 @@
           />
         </div>
 
-        <section class="content__actu bg-white pX-2 pY-1 mT-2">
+        <section id="personnage" class="content__actu bg-white pX-2 pY-1 mT-2">
           <div class="d-flex justify-content-sb align-items-center">
             <button class="btn btn--radius fw-700 fs-2 bg-green">
-              Info Culture
+              Personnage
             </button>
             <a href="#" class="c-green decoration-none fs-1-7"
               >Autres articles
@@ -830,7 +875,7 @@
           </div>
 
           <div class="box box-3 g-1 pT-1">
-            <div>
+            <a href="article.html">
               <div>
                 <img src="images/gettyimages-1.png" alt="" class="w-100" />
               </div>
@@ -844,9 +889,9 @@
               </h4>
 
               <p class="fs-1 pT-1 c-green">20 avrill 2020 a 19h34min</p>
-            </div>
+            </a>
 
-            <div>
+            <a href="article.html">
               <div>
                 <img src="images/gettyimages-9.png" alt="" class="w-100" />
               </div>
@@ -861,9 +906,9 @@
               </h4>
 
               <p class="fs-1 pT-1 c-green">20 avrill 2020 a 19h34min</p>
-            </div>
+            </a>
 
-            <div>
+            <a href="article.html">
               <div>
                 <img src="images/gettyimages-14.png" alt="" class="w-100" />
               </div>
@@ -878,13 +923,13 @@
               </h4>
 
               <p class="fs-1 pT-1 c-green">20 avrill 2020 a 19h34min</p>
-            </div>
+            </a>
           </div>
         </section>
 
         <section class="content__actu mT-2">
           <div class="box box-2 g-1 pT-1">
-            <div class="bg-black pX-2 pY-1 radius-1">
+            <div id="lifestyle" class="bg-black pX-2 pY-1 radius-1">
               <div class="d-flex justify-content-sb align-items-center pY-1">
                 <button class="btn btn--radius fw-700 fs-2 bg-green">
                   Lifestyle
@@ -909,7 +954,7 @@
               <p class="fs-1 pT-1">20 avrill 2020 a 19h34min</p>
             </div>
 
-            <div class="bg-black pX-2 pY-1 radius-1">
+            <div id="tendance" class="bg-black pX-2 pY-1 radius-1">
               <div class="d-flex justify-content-sb align-items-center pY-1">
                 <button class="btn btn--radius fw-700 fs-2 bg-green">
                   Tendance

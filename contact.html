@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <script src="js/search.js" defer></script>
     <title>Document</title>
   </head>
   <body>
@@ -39,7 +44,7 @@
           <ul class="list-none flex-1 justify-content-center d-flex g-1">
             <li class="borderR-black pR-1">
               <a
-                href="#"
+                href="contact.html"
                 class="d-flex align-items-center g-1 c-green decoration-none fs-2"
               >
                 <img src="images/Groupe 32.png" alt="" />
@@ -57,7 +62,7 @@
             </li>
             <li>
               <a
-                href="#"
+                href="category.html"
                 class="d-flex align-items-center g-1 c-green decoration-none fs-2"
               >
                 <img src="images/Groupe 33.png" alt="" />
@@ -65,6 +70,25 @@
               </a>
             </li>
           </ul>
+
+          <div class="search borderL-black pL-1 pY-1">
+            <div>
+              <img
+                src="images/magnifying-glass-solid.svg"
+                alt=""
+                style="height: 3rem; width: 3rem; cursor: pointer"
+                id="searching"
+              />
+            </div>
+
+            <div id="search" class="searchdiv" style="overflow: hidden">
+              <input
+                type="text"
+                class="w-100 mT-1 pY-1 pX-1 c-green"
+                placeholder="Search"
+              />
+            </div>
+          </div>
         </div>
       </div>
 
@@ -72,43 +96,57 @@
         <div class="container">
           <ul class="list-none d-flex g-2 justify-content-center">
             <li>
-              <a href="#" class="c-green decoration-none fs-1-7">Actu GNN</a>
+              <a href="#actu" class="c-green decoration-none fs-1-7"
+                >Actu GNN</a
+              >
             </li>
 
             <li>
-              <a href="#" class="c-green decoration-none fs-1-7">Politique</a>
+              <a href="#politique" class="c-green decoration-none fs-1-7"
+                >Politique</a
+              >
             </li>
 
             <li>
-              <a href="#" class="c-green decoration-none fs-1-7">Social Actu</a>
+              <a href="#social" class="c-green decoration-none fs-1-7"
+                >Social Actu</a
+              >
             </li>
 
             <li>
-              <a href="#" class="c-green decoration-none fs-1-7">Sport GNN</a>
+              <a href="#sport" class="c-green decoration-none fs-1-7"
+                >Sport GNN</a
+              >
             </li>
 
             <li>
-              <a href="#" class="c-green decoration-none fs-1-7"
+              <a href="#faits" class="c-green decoration-none fs-1-7"
                 >Faits divers</a
               >
             </li>
 
             <li>
-              <a href="#" class="c-green decoration-none fs-1-7"
+              <a href="#info" class="c-green decoration-none fs-1-7"
                 >Info Culture</a
               >
             </li>
 
             <li>
-              <a href="#" class="c-green decoration-none fs-1-7">Personnage</a>
+              <a href="#personnage" class="c-green decoration-none fs-1-7"
+                >Personnage</a
+              >
             </li>
 
             <li>
-              <a href="#" class="c-green decoration-none fs-1-7">Lifestyle</a>
+              <a href="#lifestyle" class="c-green decoration-none fs-1-7"
+                >Lifestyle</a
+              >
             </li>
 
             <li>
-              <a href="#" class="c-green decoration-none fs-1-7">Tendance</a>
+              <a href="#tendance" class="c-green decoration-none fs-1-7"
+                >Tendance</a
+              >
             </li>
           </ul>
         </div>

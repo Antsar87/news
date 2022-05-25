@@ -36,6 +36,12 @@ button {
   cursor: pointer;
 }
 
+a {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+}
+
 .d-flex {
   display: flex;
 }
@@ -168,7 +174,7 @@ button {
 }
 
 .c-white {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .borderL-white {
@@ -631,6 +637,15 @@ button {
 }
 .nav__main-logo img {
   width: 15rem;
+}
+
+.searchdiv {
+  max-height: 0;
+  transition: all 1s;
+}
+
+.maxhe {
+  max-height: 1000px !important;
 }
 
 .footer > .d-flex {

@@ -6,8 +6,8 @@ let end = perPage;
 const product = [
   {
     id: 1,
-    image:
-      'http://static.ybox.vn/2017/5/12/1041f8a2-368f-11e7-8a7e-cac091044fd5.jpg',
+    image: 'images/gettyimages-9.png',
+
     title: '1: Charlotte’s Web - E.B White',
   },
   {
@@ -294,7 +294,7 @@ function renderProduct(product) {
   html = '';
   const content = product.map((item, index) => {
     if (index >= start && index < end) {
-      html += '<div>';
+      html += '<a href="article.html">';
       html += '<div>';
       html += `<img src="${item.image}" alt="" class="w-100" />`;
       html += '</div>';
@@ -305,7 +305,7 @@ function renderProduct(product) {
       html += `            
             <p class="c-green fs-1 pT-1">20 avrill 2020 a 19h34min</p>
             `;
-      html += '</div>';
+      html += '</a>';
 
       return html;
     }
