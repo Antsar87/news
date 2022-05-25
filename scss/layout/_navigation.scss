@@ -1,0 +1,15 @@
+.nav {
+  &__top {
+    img {
+      height: 2.3rem;
+    }
+  }
+
+  &__main {
+    &-logo {
+      img {
+        width: 15rem;
+      }
+    }
+  }
+}

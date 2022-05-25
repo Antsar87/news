@@ -1,3 +1,338 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html {
+  font-size: 31.25%;
+  scroll-behavior: smooth;
+}
+@media (min-width: 400px) {
+  html {
+    font-size: 37.5%;
+  }
+}
+@media (min-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (min-width: 1300px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+body {
+  margin: 0;
+  background: #eee;
+  overflow-x: hidden;
+}
+
+button {
+  cursor: pointer;
+}
+
+.d-flex {
+  display: flex;
+}
+
+@media (min-width: 600px) {
+  .d-flex-md {
+    display: flex;
+  }
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-sb {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.g-1 {
+  gap: 1rem;
+}
+
+.g-2 {
+  gap: 2rem;
+}
+
+.g-3 {
+  gap: 3rem;
+}
+
+.g-5 {
+  gap: 5rem;
+}
+
+.d-none {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .d-block-md {
+    display: block;
+  }
+}
+
+.pY-1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.pY-2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.pX-1 {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.pX-2 {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.pL-1 {
+  padding-left: 1rem;
+}
+
+.pR-1 {
+  padding-right: 1rem;
+}
+
+.pT-1 {
+  padding-top: 1rem;
+}
+
+.pB-1 {
+  padding-bottom: 1rem;
+}
+
+.mT-1 {
+  margin-top: 1rem;
+}
+
+.mT-2 {
+  margin-top: 2rem;
+}
+
+.mY-5 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.bg-black {
+  background: #2d2d2e;
+  color: #ffffff;
+}
+
+.bg-white {
+  background: #ffffff;
+}
+
+.bg-green {
+  background: #009657;
+  color: #ffffff;
+}
+
+.c-green {
+  color: #009657;
+}
+.c-green::placeholder {
+  color: #009657;
+}
+
+.c-white {
+  color: #ffffff;
+}
+
+.borderL-white {
+  border-left: 1px solid #ffffff;
+}
+
+.borderR-white {
+  border-right: 1px solid #ffffff;
+}
+
+.borderL-black {
+  border-left: 1px solid #2d2d2e;
+}
+
+.borderR-black {
+  border-right: 1px solid #2d2d2e;
+}
+
+.border-gray {
+  border: 2px solid #9e9e9e;
+}
+
+.border-none {
+  border: none;
+}
+
+.list-none {
+  list-style: none;
+}
+
+.decoration-none {
+  text-decoration: none;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.fs-1 {
+  font-size: 1rem;
+}
+
+.fs-1-5 {
+  font-size: 1.5rem;
+}
+
+.fs-1-7 {
+  font-size: 1.7rem;
+}
+
+.fs-2 {
+  font-size: 2rem;
+}
+
+.fs-3 {
+  font-size: 3rem;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.radius-1 {
+  border-radius: 1rem;
+}
+
+.radius-2 {
+  border-radius: 2rem;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.container {
+  max-width: 1500px;
+  width: 100%;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.btn {
+  border: none;
+  padding: 0.5rem 1rem;
+}
+.btn--radius {
+  border-radius: 10rem;
+}
+
+.columns-2 .content__actu {
+  border-radius: 1rem;
+}
+.columns-2 .content__actu .box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 700px) {
+  .columns-2 .content__actu .box {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 900px) {
+  .columns-2 .content__actu .box {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 900px) {
+  .columns-2 .content__actu .box.box-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.columns-2 .content__actu .box.box-3 img {
+  height: 35rem;
+}
+@media (min-width: 900px) {
+  .columns-2 .content__actu .box.box-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.columns-2 .content__actu .box.box-2 img {
+  height: 37rem;
+}
+.columns-2 .content__actu .box img {
+  height: 25rem;
+  object-fit: cover;
+}
+
+.nav__top img {
+  height: 2.3rem;
+}
+.nav__main-logo img {
+  width: 15rem;
+}
+
+.footer > .d-flex {
+  flex-direction: column;
+}
+@media (min-width: 700px) {
+  .footer > .d-flex {
+    flex-direction: row;
+  }
+}
+.footer > .d-flex > div {
+  flex: 1;
+  margin-top: 2rem;
+}
+.footer__logo img {
+  height: 7.5rem;
+}
+.footer__logo p {
+  font-size: 1.5rem;
+}
+.footer ul li img {
+  height: 2.5rem;
+}
+
+.formBody .textarea {
+  height: 10rem;
+  resize: none;
+}
+.formBody > .d-flex {
+  flex-direction: column;
+}
+@media (min-width: 900px) {
+  .formBody > .d-flex {
+    flex-direction: row;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

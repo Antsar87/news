@@ -1,0 +1,47 @@
+@use '../abstracts/mixins' as *;
+.columns-2 {
+  .content {
+    &__actu {
+      border-radius: 1rem;
+
+      .box {
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        @include for-size('700px') {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include for-size('900px') {
+          grid-template-columns: repeat(4, 1fr);
+        }
+
+        &.box-3 {
+          @include for-size('900px') {
+            grid-template-columns: repeat(3, 1fr);
+          }
+
+          img {
+            height: 35rem;
+          }
+        }
+
+        &.box-2 {
+          @include for-size('900px') {
+            grid-template-columns: repeat(2, 1fr);
+          }
+
+          img {
+            height: 37rem;
+          }
+        }
+
+        img {
+          height: 25rem;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@use '../abstracts/mixins' as *;
+
+.formBody {
+  .textarea {
+    height: 10rem;
+    resize: none;
+  }
+
+  & > .d-flex {
+    flex-direction: column;
+
+    @include for-size('900px') {
+      flex-direction: row;
+    }
+  }
+}

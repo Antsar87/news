@@ -1,0 +1,36 @@
+@use '../abstracts/mixins' as *;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 31.25%;
+  scroll-behavior: smooth;
+
+  @include for-size('phone-only') {
+    font-size: 37.5%;
+  }
+
+  @include for-size('tablet-portrait-up') {
+    font-size: 50%;
+  }
+
+  @include for-size(1300px) {
+    font-size: 62.5%;
+  }
+}
+
+body {
+  margin: 0;
+  background: #eee;
+  overflow-x: hidden;
+}
+
+button {
+  cursor: pointer;
+}

@@ -1,0 +1,219 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/color' as *;
+
+//Flex
+.d-flex {
+  display: flex;
+}
+
+.d-flex-md {
+  @include for-size('tablet-portrait-up') {
+    display: flex;
+  }
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-sb {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.g-1 {
+  gap: 1rem;
+}
+
+.g-2 {
+  gap: 2rem;
+}
+
+.g-3 {
+  gap: 3rem;
+}
+
+.g-5 {
+  gap: 5rem;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block-md {
+  @include for-size('tablet-landscape-up') {
+    display: block;
+  }
+}
+
+// Padding
+.pY-1 {
+  @include pY(1rem);
+}
+
+.pY-2 {
+  @include pY(2rem);
+}
+
+.pX-1 {
+  @include pX(1rem);
+}
+
+.pX-2 {
+  @include pX(2rem);
+}
+
+.pL-1 {
+  padding-left: 1rem;
+}
+
+.pR-1 {
+  padding-right: 1rem;
+}
+
+.pT-1 {
+  padding-top: 1rem;
+}
+
+.pB-1 {
+  padding-bottom: 1rem;
+}
+
+.mT-1 {
+  margin-top: 1rem;
+}
+
+.mT-2 {
+  margin-top: 2rem;
+}
+
+.mY-5 {
+  @include mY(5rem)
+}
+// Padding
+
+// bg
+.bg-black {
+  background: $c-black;
+  color: $c-white;
+}
+
+.bg-white {
+  background: $c-white;
+}
+
+.bg-green {
+  background: $c-green;
+  color: $c-white;
+}
+// bg
+
+// color
+.c-green {
+  color: $c-green;
+
+  &::placeholder{
+    color: $c-green;
+  }
+}
+
+.c-white {
+  color: $c-white;
+}
+// color
+
+.borderL-white {
+  border-left: 1px solid $c-white;
+}
+
+.borderR-white {
+  border-right: 1px solid $c-white;
+}
+
+.borderL-black {
+  border-left: 1px solid $c-black;
+}
+
+.borderR-black {
+  border-right: 1px solid $c-black;
+}
+
+.border-gray {
+  border: 2px solid #9e9e9e;
+}
+
+.border-none {
+  border: none;
+}
+
+.list-none {
+  list-style: none;
+}
+
+.decoration-none {
+  text-decoration: none;
+}
+
+.w-100 {
+  width: 100%;
+}
+// font-size
+.fs-1 {
+  font-size: 1rem;
+}
+
+.fs-1-5 {
+  font-size: 1.5rem;
+}
+
+.fs-1-7 {
+  font-size: 1.7rem;
+}
+
+.fs-2 {
+  font-size: 2rem;
+}
+
+.fs-3 {
+  font-size: 3rem;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+// font-size
+
+.radius-1 {
+  border-radius: 1rem;
+}
+
+.radius-2 {
+  border-radius: 2rem;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+// Container
+.container {
+  max-width: 1500px;
+  width: 100%;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+// Container
