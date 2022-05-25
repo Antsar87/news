@@ -62,6 +62,10 @@ button {
   justify-content: center;
 }
 
+.justify-content-end {
+  justify-content: flex-end;
+}
+
 .g-1 {
   gap: 1rem;
 }
