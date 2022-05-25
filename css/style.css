@@ -137,6 +137,11 @@ button {
   margin-bottom: 5rem;
 }
 
+.mY-10 {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
 .bg-black {
   background: #2d2d2e;
   color: #ffffff;
@@ -390,15 +395,6 @@ button {
   display: none;
 }
 
-input {
-  width: 200px;
-  height: 30px;
-  border-radius: 5px;
-  border: 1px solid #009657;
-  padding-left: 15px;
-  outline: none;
-}
-
 .overlay {
   position: fixed;
   top: 0;
@@ -450,7 +446,6 @@ input {
   width: 30%;
   height: 30px;
   border-radius: 5px;
-  border: 1px solid #009657;
   padding-left: 15px;
   outline: none;
 }
